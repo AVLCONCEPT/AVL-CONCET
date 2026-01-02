@@ -8,28 +8,32 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f7f7f7;
+      background-color: #f7f7f7; /* Default background for desktop */
       margin: 0;
       padding: 0;
     }
-    /* Mobile-only background starts here */
-  @media only screen and (max-width: 768px) {
-    body {
-      /* Replace 'bg-mobile.png */
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg-mobile.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
+
+    /* This block only runs on mobile devices */
+    @media only screen and (max-width: 768px) {
+      body {
+        /* This links to your uploaded file bg-mobile.png */
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg-mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
     }
-    .container {
-      background: rgba(255, 255, 255, 0.9); /* Makes the white box slightly see-through on mobile */
-    }
-  }
+
     .container {
       max-width: 400px;
       margin: 50px auto;
-      background: #fff;
+      /* rgba(255, 255, 255, 0.9) makes the white box 90% solid so the BG shows through slightly */
+      background: rgba(255, 255, 255, 0.9); 
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
