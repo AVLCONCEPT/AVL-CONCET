@@ -1,106 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AVL Concept</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f7f7f7; /* Default background for desktop */
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL CONCEPT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
 
-    /* This block only runs on mobile devices */
-    @media only screen and (max-width: 768px) {
-      body {
-        /* This links to your uploaded file bg-mobile.png */
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg-mobile.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-      }
-    }
-   .container {
-  max-width: 400px;
-  margin: 50px auto;
-  /* This adds your image 'bggg.png' inside the box */
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('bgg1.png');
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-  border-radius: 15px;
-  /* This keeps the professional blur effect */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-    h1, p, div {
-      color: white !important;
-    }
-    .logo-top {
-      width: 150px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 22px;
-      margin: 0 0 30px 0;
-      color: #333;
-    }
-    .links a {
-      display: block;
-      margin: 15px 0;
-      padding: 12px;
-      text-decoration: none;
-      color: white;
-      background-color: #0077ff;
-      border-radius: 8px;
-      font-size: 18px;
-      transition: background-color 0.3s;
-    }
-    .links a:hover {
-      background-color: #005bb5;
-    }
-    .footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #666;
-    }
-    .footer img {
-      width: 80px;
-      height: auto;
-      margin-top: 10px;
-    }
-  </style>
+        /* Mobile Background Setup */
+        @media only screen and (max-width: 768px) {
+            body {
+                /* Replace 'bg-mobile.png' with your main background file name */
+                background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bg-mobile.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        }
+
+        .container {
+            max-width: 380px;
+            margin: 40px auto;
+            /* Inner box background */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bgg1.png');
+            background-size: cover;
+            background-position: center;
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .logo-top {
+            width: 100%;
+            max-width: 220px; /* Controlled size so it's not cut off */
+            height: auto;
+            margin: 0 auto 10px auto;
+            display: block;
+            image-rendering: -webkit-optimize-contrast; /* Keeps logo sharp */
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn i {
+            margin-right: 10px; /* Space for the icon */
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
+
+        .footer-text {
+            font-size: 12px;
+            line-height: 1.5;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+
+        .logo-bottom {
+            width: 80px;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Top Logo -->
-    <img src="logo.png" alt="Top Logo">
 
-    <!-- Company Name -->
-    <h1>AVL CONCEPT</h1>
+    <div class="container">
+        <img src="logo.png" class="logo-top" alt="AVL Concept Logo">
+        
+        <h1>AVL Concept</h1>
 
-    <!-- Social Links -->
-    <div class="links">
-      <a href="https://www.instagram.com/avlco_ncept/?igsh=MTg0MG5sY2c3M2xxcQ%3D%3D#" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/avlconceptadoor?rdid=Ivr9sBfsgOSAJxAF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17b9fSWXP9%2F#" target="_blank">Facebook</a>
-      <a href="https://wa.me/919778729203" target="_blank">WhatsApp</a>
-      <a href="https://www.google.com/maps/dir//Nedunagapalli+Building,+P.+O,+Peringanad,+Adoor,+Kerala+691551/@9.1534672,76.7276718,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b0611e2d439d215:0xc6269d99854686ee!2m2!1d76.7047904!2d9.1475714?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google</a>
+        <a href="<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL Concept</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        /* Mobile Background Setup */
+        @media only screen and (max-width: 768px) {
+            body {
+                /* Replace 'bg-mobile.png' with your main background file name */
+                background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bg-mobile.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        }
+
+        .container {
+            max-width: 380px;
+            margin: 40px auto;
+            /* Inner box background */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bggg.png');
+            background-size: cover;
+            background-position: center;
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .logo-top {
+            width: 100%;
+            max-width: 220px; /* Controlled size so it's not cut off */
+            height: auto;
+            margin: 0 auto 10px auto;
+            display: block;
+            image-rendering: -webkit-optimize-contrast; /* Keeps logo sharp */
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn i {
+            margin-right: 10px; /* Space for the icon */
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
+
+        .footer-text {
+            font-size: 12px;
+            line-height: 1.5;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+
+        .logo-bottom {
+            width: 80px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" class="logo-top" alt="AVL Concept Logo">
+        
+        <h1>AVL Concept</h1>
+
+        <a href="https://www.instagram.com/avlco_ncept/?igsh=MTg0MG5sY2c3M2xxcQ%3D%3D#" class="btn">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href=https://www.facebook.com/avlconceptadoor?rdid=Ivr9sBfsgOSAJxAF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17b9fSWXP9%2F#" class="btn">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href=""https://wa.me/919778729203" class="btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.google.com/maps/dir//Nedunagapalli+Building,+P.+O,+Peringanad,+Adoor,+Kerala+691551/@9.1534672,76.7276718,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b0611e2d439d215:0xc6269d99854686ee!2m2!1d76.7047904!2d9.1475714?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D">
+            <i class="fab fa-google"></i> Google
+        </a>
+
+        <div class="footer-text">
+            AVL CONCEPT, NEDUNAGAPLLIL PLAZA<br>
+            PERINGNADU P.O, ADOOR, PATHANAMTHITTA<br>
+            KERALA
+        </div>
+        
+        <img src="logo.png" class="logo-bottom" alt="Small Logo">
     </div>
 
-    <!-- Footer -->
-    <div class="footer"> 
-      AVL CONCEPT,
-      NEDUNAGAPLLIL PLAZA
-      PERINGNADU P.O ADOOR
-      PATHANAMTHITTA ,KERALA<br>
-      <img src="bot-avl-logo.png">
+</body>
+</html>Z" class="btn">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://facebook.com/your-profile" class="btn">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://wa.me/your-number" class="btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://google.com" class="btn">
+            <i class="fab fa-google"></i> Google
+        </a>
+
+        <div class="footer-text">
+            AVL CONCEPT, NEDUNAGAPLLIL PLAZA<br>
+            PERINGNADU P.O, ADOOR, PATHANAMTHITTA<br>
+            KERALA
+        </div>
+        
+        <img src="logo.png" class="logo-bottom" alt="Small Logo">
     </div>
-  </div>
+
 </body>
 </html>
