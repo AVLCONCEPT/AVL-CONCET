@@ -25,17 +25,20 @@
       }
     }
    .container {
-      max-width: 400px;
-      margin: 50px auto;
-      /* This makes the box transparent. Change 0.2 to 0.0 for NO box at all */
-      background: rgba(255, 255, 255, 0.2); 
-      padding: 30px;
-      border-radius: 15px;
-      /* This adds a professional blur effect over your background image */
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }h1, p, div {
+  max-width: 400px;
+  margin: 50px auto;
+  /* This adds your image 'bggg.png' inside the box */
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('bggg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 15px;
+  /* This keeps the professional blur effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+    h1, p, div {
       color: white !important;
     }
     .logo-top {
